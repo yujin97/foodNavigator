@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".restaurantDetail.UpdateDetailFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cardview_dark_background"
+        >
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/topBar"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:id="@+id/cancelBtn"
+                android:text="Cancel"
+                android:textStyle="bold"
+                android:textColor="#1AA7D6"
+                android:textSize="20dp">
+            </TextView>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="UPDATE"
+                android:alpha="0.2"
+                android:textColor="#FFF"
+                android:background="@drawable/roundedbutton_effect"
+                android:id="@+id/postBtn"/>
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:padding="10dp"
+            android:src="@drawable/default_user"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#413E4F"
+            android:layout_below="@id/topBar"
+            android:id="@+id/user_image"/>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/user_image"
+            android:layout_toEndOf="@id/user_image"
+            android:layout_below="@id/topBar"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_toEndOf="@id/user_image"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFF"
+                    android:textStyle="bold"
+                    android:text="DETAIL OF RESTAURANT"
+                    android:id="@+id/title"
+
+                    />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textColor="#E6E2E2"
+                        android:textColorHint="#E6E2E2"
+                        android:hint="In Operation"
+                        android:layout_centerVertical="true"
+                        android:textStyle="bold"
+                        android:id="@+id/ratingTitle"
+                        >
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ratingTitle"
+                        >
+
+                        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:id="@+id/ratingGroup">
+                            <RadioButton android:id="@+id/op_yes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="10dp"
+                                android:text="YES"
+                                android:textColor="#FFF"
+                                />
+                            <RadioButton android:id="@+id/op_no"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NO"
+                                android:textColor="#FFF"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="10dp"
+                                />
+
+                        </RadioGroup>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/typeLabel"
+                        android:text="Type:"
+                        android:textColor="#FFF"
+                        android:layout_centerVertical="true"
+                        />
+                    <Spinner
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:backgroundTint="#FFF"
+                        android:layout_toEndOf="@id/typeLabel"
+                        android:layout_marginLeft="30dp"
+                        android:id="@+id/type"
+                        android:spinnerMode="dropdown"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/priceLabel"
+                        android:text="Price:"
+                        android:textColor="#FFF"
+                        android:layout_centerVertical="true"
+                        />
+                    <Spinner
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:backgroundTint="#FFF"
+                        android:layout_toEndOf="@id/priceLabel"
+                        android:layout_marginLeft="30dp"
+                        android:id="@+id/price"
+                        android:spinnerMode="dropdown"/>
+                </RelativeLayout>
+
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:inputType="text|textMultiLine"
+                    android:textColor="#E6E2E2"
+                    android:textColorHint="#E6E2E2"
+                    android:hint="Describe the restaurant?"
+                    android:gravity="top|left"
+                    android:id="@+id/description"/>
+
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "512821761466",
+    "firebase_url": "https://foodnavigator-bcf3e.firebaseio.com",
+    "project_id": "foodnavigator-bcf3e",
+    "storage_bucket": "foodnavigator-bcf3e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:512821761466:android:188136df32af12fa3ef983",
+        "android_client_info": {
+          "package_name": "eugene.hku.foodnavigator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "512821761466-jp110vkjdi015iu0gcol9d58ar1mh1o1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "eugene.hku.foodnavigator",
+            "certificate_hash": "2215038da7dcf6b9b89329013a1a343ae0ae3331"
+          }
+        },
+        {
+          "client_id": "512821761466-tdkjv1ku8lqd1vl46q3slb9b1pli98ij.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrTAAXJQQ0YEavlTBAUwTmRVY4MezxqGE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "512821761466-tdkjv1ku8lqd1vl46q3slb9b1pli98ij.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
